@@ -1,6 +1,22 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.12.9/babel.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScoreBoard App</title>
+</head>
+<body>
+  <div id="root"></div>
 
-<script type="text/babel">
+  <!-- React and ReactDOM -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+
+  <!-- Babel for JSX transformation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.12.9/babel.min.js"></script>
+
+  <!-- Your React component code -->
+  <script type="text/babel">
     const ScoreBoard = () => {
       const [scoreA, setScoreA] = React.useState(0);
       const [scoreB, setScoreB] = React.useState(0);
@@ -63,4 +79,6 @@
     };
 
     ReactDOM.render(<ScoreBoard />, document.getElementById('root'));
-</script>
+  </script>
+</body>
+</html>
